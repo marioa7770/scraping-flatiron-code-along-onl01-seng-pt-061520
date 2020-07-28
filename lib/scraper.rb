@@ -13,6 +13,8 @@ class Scraper
   /learn-co-
   curriculum.github.io/site-
   for-scraping/courses"))
+  
+    binding.pry
   end
  
 end
