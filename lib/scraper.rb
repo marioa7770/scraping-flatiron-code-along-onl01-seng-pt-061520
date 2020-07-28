@@ -15,14 +15,14 @@ class Scraper
     curriculum.github.io/site-
     for-scraping/courses"))
  
-    doc.css(".post").each 
+        doc.css(".post").each 
     do |post|
-      course = Course.new
-      course.title = 
+          course = Course.new
+          course.title = 
       post.css("h2").text
-      course.schedule = 
+          course.schedule = 
       post.css(".date").text
-      course.description =
+          course.description =
       post.css("p").text
       
         binding.pry
